@@ -42,6 +42,7 @@ i {
     margin: 4%;
     text-align: center;
     background-color: rgba(222, 228, 248, 5);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
     border-radius: 10px;
     padding: 5%;
 }
@@ -81,4 +82,34 @@ i {
 
 .balance h1 {
     font-size: 40px;
+}
+
+/*Ingreso*/
+.ingreso {
+    margin: 4%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5%;
+    
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+
+.ingreso label {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.ingreso input {
+    width: 90%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 30px;
+    height: 42px;
+    font-size: 20px;
+}
+
+.ingreso input:focus {
+outline: none;
 }
