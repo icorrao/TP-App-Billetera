@@ -11,6 +11,10 @@ body {
     font-family: 'Roboto';
 }
 
+i {
+    color: black;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -31,4 +35,50 @@ body {
 }
 .nav-derecha i:last-child {
     margin-right: 0px;
+}
+
+/*Balance*/
+.balance {
+    margin: 4%;
+    text-align: center;
+    background-color: rgba(222, 228, 248, 5);
+    border-radius: 10px;
+    padding: 5%;
+}
+
+.balance-usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balance-usuario p {
+    font-size: 20px;
+}
+
+.balance-usuario i {
+    font-size: 22px;
+    background-color: rgb(163, 166, 204);
+    color: #fff;
+    padding: 4px 9px;
+    border-radius: 50%;
+}
+
+.balance label {
+    font-size: 20px;
+    display: block;
+}
+
+.balance input {
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.balance p {
+    /* font-size: 40px; */
+}
+
+.balance h1 {
+    font-size: 40px;
 }
