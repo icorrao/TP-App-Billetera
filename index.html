@@ -12,7 +12,7 @@
     <title>TP App Billetera</title>
   </head>
   <body>
-
+  <header class="header">
     <!-- Nav -->
     <nav class="nav">
       <a href="#"><i class="bi bi-list"></i>
@@ -22,20 +22,44 @@
         <a href="#"><i class="bi bi-moon"></i></a>
       </div>
     </nav>
-    <!-- Balance -->
-    <section class="balance">
-      <div class="balance-usuario">
-        <p>Usuario</p>
-        <i class="bi bi-person"></i>
-      </div>
-      <h2>Su Balance</h1>
-      <h1>$0.00</h1>
-    </section>
+  </header>
 
-    <!-- Seccion ingreso -->
-    <section class="ingreso">
-        <label for="saldo">Ingrese su saldo</label>
-        <input type="text" name="saldo" id="saldo">
-    </section>
+  <!-- Balance -->
+  <section class="balance">
+    <div class="balance-usuario">
+      <h2>Usuario</h2>
+      <i class="bi bi-person"></i>
+    </div>
+    <p>Su Balance</p>
+    <h1>$0.00</h1>
+  </section>
+
+  <!-- Botones -->
+  <section class="botones">
+    <div class="tabs">
+      <div class="tab-1">Tokens</div>
+      <div class="tab-2">NFTs</div>
+    </div>
+    <div class="iconos">
+      <div class="icono">
+        <i class="bi bi-arrow-up-square"></i>
+        <p>Agregar</p>
+        <p>Saldo</p>
+      </div>
+      <div class="icono">
+        <i class="bi bi-arrow-down-square"></i>
+        <p>Recibir</p>
+      </div>
+      <div class="icono">
+        <i class="bi bi-bag"></i>
+        <p>Comprar</p>
+      </div>
+      <div class="icono">
+        <i class="bi bi-arrow-down-up"></i>
+        <p>Intercambio</p>
+      </div>
+    </div>
+  </section>
+  
   </body>
 </html>
