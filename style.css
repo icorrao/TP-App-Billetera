@@ -48,7 +48,7 @@ i {
 /*Balance*/
 .balance {
     margin: 4%;
-    background-color: #F9FAFE;
+    background-color: #edf0fd;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 10px;
     padding: 20px;
@@ -135,6 +135,22 @@ i {
     padding:0 20px 20px 20px;
 }
 
+/* Botones 2 */
+.botones-2 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+   .btn {
+    padding: 20px 60px;
+    font-size: 20px;
+    background-color: #edf0fd;
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+   } 
+
 /*Ingreso*/
 .tarjeta {
     margin: 4%;
@@ -180,4 +196,20 @@ outline: none;
 .lista-gastos h1 {
     font-size: 18px;
     text-align: left;
+}
+
+.gastos-principal {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 25px 0;
+}
+
+.gastos i {
+    font-size: 30px;
+}
+
+.gasto {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 25px 0;
 }
