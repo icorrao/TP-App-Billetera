@@ -31,19 +31,19 @@ i {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 0.7rem 0;
 }
 
 .nav i {
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .nav .bi-list {
-    font-size: 35px;
+    font-size: 2.2rem;
 }
 
 .nav-derecha i {
-    margin-right: 10px;
+    margin-right: 0.7rem;
 }
 
 .nav-derecha .bi-moon {
@@ -53,65 +53,61 @@ i {
 .balance {
     background-color: #f6f8ff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 10px;
-    padding: 26px;
+    border-radius: 0.7rem;
+    padding: 1.7rem;
 }
 
 .balance-usuario {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .balance p {
     color: #76787B;
-    margin-bottom: 10px;
-    font-size: 20px;
+    margin-bottom: 0.7rem;
+    font-size: 1.25rem;
 }
 
 .balance-usuario i {
-    font-size: 28px;
+    font-size: 1.75rem;
     background-color: #000;
     color: #fff;
-    padding: 5px 8px;
+    padding: 0.4rem 0.5rem;
     border-radius: 50%;
 }
 
 .balance label {
-    font-size: 20px;
+    font-size: 1.25rem;
     display: block;
 }
 
 .balance input {
     width: 90%;
-    height: 50px;
-    border-radius: 10px;
-}
-
-.balance p {
-    /* font-size: 40px; */
+    height: 3.2rem;
+    border-radius: 0.7rem;
 }
 
 .balance h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 .botones {
-    margin-top: 25px;
+    margin-top: 1.6rem;
 }
 
 .tabs {
     display: flex;
     justify-content: space-around;
-    font-size: 20px;
-    margin: 10px 0;
+    font-size: 1.25rem;
+    margin: 0.7rem 0;
 }
 
 .iconos {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .icono {
@@ -121,17 +117,17 @@ i {
 }
 
 .icono p {
-    margin: 3px 0 0 0;
+    margin: 0.2rem 0 0 0;
 }
 
 .icono i {
-    font-size: 30px;
+    font-size: 1.9rem;
 }
 
 .tab-1 {
     width: 40%;
     border-bottom: 2px solid rgb(62, 62, 62);
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
     text-align: center;
 }
 
@@ -146,12 +142,14 @@ i {
 .botones-2 {
         display: flex;
         justify-content: space-between;
-        margin-top: 20px;
+        
+        margin-top: 1.25rem;
     }
 
    .btn {
-    padding: 15px 40px;
-    font-size: 20px;
+    width: 45%;
+    padding: 1rem 2.5rem;
+    font-size: 1.25rem;
     background-color: #f6f8ff;
     border: none;
     border-radius: 20px;
@@ -159,32 +157,32 @@ i {
    } 
 
    .btn i {
-    margin-right: 10px;
-    font-size: 20px;
+    margin-right: 0.7rem;
+    font-size: 1.25rem;
    }
 
 /*Ingreso*/
 .tarjeta {
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0.7rem;
     padding: 5%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .tarjeta label {
     display: block;
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
 }
 
 .tarjeta input {
     width: 90%;
-    height: 30px;
+    height: 1.875rem;
     border: 1px solid rgb(220, 220, 220);
-    border-radius: 10px;
-    padding-left: 30px;
-    height: 42px;
-    font-size: 20px;
+    border-radius: 0.7rem;
+    padding-left: 1.875rem;
+    height: 2.625rem;
+    font-size: 1.25rem;
 }
 
 .tarjeta input:focus {
@@ -196,21 +194,21 @@ outline: none;
 }
 
 .gastos {
-    margin: 20px  10px 0;
+    margin: 1.25rem  0.7rem 0;
 
 }
 
 .gastos label {
-    font-size: 17px;
-    margin-bottom: 5px;
+    font-size: 1.1rem;
+    margin-bottom: 0.3125rem;
 }
 
 .gastos input {
-    height: 30px;
+    height: 1.875rem;
 }
 
 .lista-gastos h1 {
-    font-size: 18px;
+    font-size: 1.2rem;
     text-align: left;
 }
 
@@ -220,19 +218,19 @@ outline: none;
 }
 
 .gastos i {
-    font-size: 30px;
+    font-size: 1.9rem;
 }
 
 .gasto {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 10px 0;
+    margin: 0.7rem 0.7rem 0;
     
 }
 
 .gasto i {
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 /* Footer */
@@ -243,15 +241,59 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 20px;
-    padding: 20px 0;
+    font-size: 1.25rem;
+    padding: 1.25rem 0;
     width: 100%;
 }
 
 .bi-file-spreadsheet {
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 0.7rem;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 1.6rem;
+}
+
+@media (max-height: 691px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 360px) { 
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .botones-2 {
+        justify-content: space-around;
+    }
+
+    .btn {
+        width: 45%;
+    }
+}
+
+@media (max-width: 960px) {
+    .btn {
+        width: 45%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1328px) {
+    .html {
+
+    }
+    
+    .btn {
+        width: 45%;
+        justify-content: space-between;
+    }
 }
