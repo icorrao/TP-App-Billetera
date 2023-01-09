@@ -211,5 +211,30 @@ outline: none;
 .gasto {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 10px 25px 0;
+}
+
+.gasto i {
+    font-size: 18px;
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 28px;
+    width: 100%;
+}
+
+.bi-file-spreadsheet {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 30px;
 }
