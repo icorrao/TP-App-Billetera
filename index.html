@@ -13,86 +13,135 @@
   </head>
   <body>
     <div class="contenedor">
-  <header class="header">
-    <!-- Nav -->
-    <nav class="nav">
-      <a href="#"><i class="bi bi-list"></i>
+      <!-- Nav -->
+      <nav class="nav">
+        <!-- Menu hamburguesa para responsive -->
+        <a href="#" id="menu-hamburguesa"><i class="bi bi-list"></i></a>
+        <div class="nav-centro">
+          <a href="#">Portfolio</a>
+          <a href="#">Actividad</a>
+          <a href="#">Tokens</a>
+          <a href="#">NFTs</a>
+          <a href="#">Ajustes</a>
+        </div>
+        <div class="nav-derecha">
+          <a href="#"><i class="bi bi-bell"></i></a>
+          <a href="#"><i class="bi bi-moon" id="modo-nocturno"></i></a>
+        </div>
+      </nav>
 
-      <div class="nav-derecha">
-        <a href="#"><i class="bi bi-bell"></i></a>
-        <a href="#"><i class="bi bi-moon"></i></a>
-      </div>
-    </nav>
-  </header>
+      <!-- Seccion Balance -->
+      <section class="balance">
+        <div class="balance-usuario">
+          <h2>Usuario</h2>
+          <i class="bi bi-person"></i>
+        </div>
+        <p>Su Balance</p>
+        <h1 id="saldo-h1">$0.00</h1>
+      </section>
 
-  <!-- Balance -->
-  <section class="balance">
-    <div class="balance-usuario">
-      <h2>Usuario</h2>
-      <i class="bi bi-person"></i>
+      <!-- Botones solo visible en responsive-->
+      <section class="botones">
+        <div class="tabs">
+          <div class="tab"><a href="#"> Tokens</a></div>
+          <div class="tab"><a href="#"> NFTs</a></div>
+        </div>
+
+        <!-- Iconos para agregar saldo -->
+        <div class="iconos">
+          <div class="icono" id="icono-saldo">
+            <a href="#">
+              <i class="bi bi-arrow-up-square"></i>
+              <p>Agregar</p>
+              <p>Saldo</p>
+            </a>
+          </div>
+          <div class="icono">
+            <a href="#">
+              <i class="bi bi-arrow-down-square"></i>
+              <p>Recibir</p>
+            </a>
+          </div>
+          <div class="icono">
+            <a href="#">
+              <i class="bi bi-bag"></i>
+              <p>Comprar</p>
+            </a>
+          </div>
+          <div class="icono">
+            <a href="#">
+              <i class="bi bi-arrow-down-up"></i>
+              <p>Intercambio</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Seccion saldo solo visible en js -->
+        <div class="agregar" id="seccion-saldo">
+          <label for="saldo">Ingrese un saldo</label>
+          <input type="text" class="saldo" name="saldo" id="saldo-input" />
+          <button class="btn" id="saldo-btn">Confirmar saldo</button>
+        </div>
+      </section>
+
+      <!-- Botones solo visibles en responsive -->
+      <section class="botones-2">
+        <button class="btn">
+          <i class="bi bi-file-earmark-person-fill"></i>Portfolio
+        </button>
+        <button class="btn">
+          <i class="bi bi-arrow-left-circle-fill"></i>Actividad
+        </button>
+      </section>
+
+      <!-- Seccion gastos -->
+      <section class="gastos">
+        <div class="gastos-principal">
+          <h2>Gastos</h2>
+          <div class="btn-gastos" id="btn-gasto">
+            <a href="#"
+              ><p>agregar un gasto</p>
+              <i class="bi bi-plus-circle"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- seccion agregar gastos js -->
+        <div class="agregar" id="seccion-gasto">
+          <label for="gasto">Ingrese un gasto</label>
+          <input
+            type="text"
+            class="gasto"
+            name="gasto"
+            id="gasto-input"
+            placeholder="Ej. 'Bicicleta'"
+          />
+          <label for="monto">Ingrese un monto</label>
+          <input type="text" class="monto" name="monto" id="monto-input" />
+          <button class="btn" id="confirmar-gasto">Confirmar gasto</button>
+        </div>
+        <div class="gasto">
+          <div class="gasto-header">
+            <h4>Gasto <i class="bi bi-chevron-down"></i></h4>
+            <h4>Monto</h4>
+          </div>
+
+          <!-- Guardador de gastos js -->
+          <div id="gasto-realizado"></div>
+        </div>
+      </section>
     </div>
-    <p>Su Balance</p>
-    <h1>$0.00</h1>
-  </section>
 
-  <!-- Botones -->
-  <section class="botones">
-    <div class="tabs">
-      <div class="tab-1">Tokens</div>
-      <div class="tab-2">NFTs</div>
-    </div>
-    <div class="iconos">
-      <div class="icono">
-        <i class="bi bi-arrow-up-square"></i>
-        <p>Agregar</p>
-        <p>Saldo</p>
+    <!-- footer -->
+    <footer>
+      <div class="footer-mobile">
+        <i class="bi bi-wallet"></i>
+        <i class="bi bi-globe2"></i>
+        <i class="bi bi-file-spreadsheet icono-medio"></i>
+        <i class="bi bi-chat-left-text"></i>
+        <i class="bi bi-chat-left-dots"></i>
       </div>
-      <div class="icono">
-        <i class="bi bi-arrow-down-square"></i>
-        <p>Recibir</p>
-      </div>
-      <div class="icono">
-        <i class="bi bi-bag"></i>
-        <p>Comprar</p>
-      </div>
-      <div class="icono">
-        <i class="bi bi-arrow-down-up"></i>
-        <p>Intercambio</p>
-      </div>
-    </div>
-  </section>
-  
-  <section class="botones-2">
-    <button class=" btn">
-      <i class="bi bi-file-earmark-person-fill"></i>Portfolio
-    </button>
-    <button class="btn">
-      <i class="bi bi-arrow-left-circle-fill"></i>Actividad
-    </button>
-  </section>
-
-<section class="gastos">
-  <div class="gastos-principal">
-  <h2>Gastos</h2>
-<i class="bi bi-plus-circle"></i>
-</div>
-  
-  <div class="gasto">
-    <h4>Gasto <i class="bi bi-chevron-down"></i></h4>
-    
-    <h4>Monto</h4>
-  </div>
-</section>
-</div>
-<footer>
-  
-  <i class="bi bi-wallet"></i>
-  <i class="bi bi-globe2"></i>
-  <i class="bi bi-file-spreadsheet icono-medio"></i>
-  <i class="bi bi-chat-left-text"></i>
-  <i class="bi bi-chat-left-dots"></i>
-
-</footer>
-
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>
