@@ -228,8 +228,9 @@ a {
 
 .botones {
   display: flex;
-  justify-content: space-between;
-  margin: 0 0 1rem 0;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 1.25rem;
 }
 
 .btn {
