@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
-html {
-  height: 100vh;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -36,13 +32,21 @@ section.dark {
   margin: 0 5%;
 }
 
-.nav,
-.nav-centro {
+a {
+  text-decoration: none;
+  color: rgb(62, 62, 62);
+}
+
+.nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  gap: 3rem;
-  padding: 1rem 0;
+  padding: 2rem 1rem;
+}
+
+.nav h1 {
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 .nav a {
@@ -55,9 +59,19 @@ section.dark {
   margin-right: 1rem;
 }
 
-.nav .bi-list {
+#menu-hamburguesa {
   font-size: 2.2rem;
   display: none;
+}
+
+.nav-centro {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav-centro a {
+  text-align: center;
 }
 
 .nav-centro a::after {
@@ -74,8 +88,7 @@ section.dark {
   transform-origin: left;
 }
 
-.nav-centro a:hover::after,
-.nav-centro a:focus::after {
+.nav-centro a:hover::after {
   opacity: 1;
   transform: scale(1);
 }
@@ -89,17 +102,21 @@ section.dark {
   padding: 1.7rem;
 }
 
-.balance-usuario {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.25rem;
+.balance h1 {
+  font-size: 3.75rem;
 }
 
 .balance p {
   color: #76787b;
   margin-bottom: 0.7rem;
   font-size: 1.25rem;
+}
+
+.balance-usuario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
 }
 
 .balance-usuario i {
@@ -110,31 +127,42 @@ section.dark {
   border-radius: 50%;
 }
 
-.balance label {
-  font-size: 1.25rem;
-  display: block;
-}
-
-.balance input {
-  width: 90%;
-  height: 3.2rem;
-  border-radius: 0.7rem;
-}
-
-.balance h1 {
-  font-size: 3.75rem;
-}
-
-/* .botones {
-  margin: 1.8rem 0;
-} */
+/* Tabs */
 
 .tabs {
   display: flex;
   justify-content: space-around;
   font-size: 1.25rem;
-  margin: 0.7rem 0;
+  margin: 1rem 0;
 }
+
+.tab {
+  width: 40%;
+  padding-bottom: 1.25rem;
+  text-align: center;
+}
+
+.tab::after {
+  content: "";
+  width: auto;
+  height: 0.1rem;
+  display: block;
+  background-color: rgb(62, 62, 62);
+  margin-top: 0.5rem;
+  opacity: 0;
+  transition: opacity 500ms, transform 500ms;
+  overflow: hidden;
+  transform: scale(0);
+  transform-origin: left;
+}
+
+.tab:hover::after,
+.tab:focus::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Iconos */
 
 .iconos {
   display: flex;
@@ -162,6 +190,8 @@ section.dark {
   color: green;
 }
 
+/* Secciones para agregar saldo */
+
 .agregar {
   display: flex;
   justify-content: space-around;
@@ -171,10 +201,6 @@ section.dark {
   border-radius: 0.7rem;
   padding: 1.7rem 0.7rem;
 }
-
-/* .agregar .btn {
-  width: 25%;
-} */
 
 .agregar label {
   font-size: 1.3rem;
@@ -198,55 +224,17 @@ section.dark {
   overflow: hidden;
 }
 
-.tab {
-  width: 40%;
-  padding-bottom: 1.25rem;
-  text-align: center;
-}
+/* Botones */
 
-a {
-  text-decoration: none;
-  color: rgb(62, 62, 62);
-}
-
-.tab::after {
-  content: "";
-  width: auto;
-  height: 0.1rem;
-  display: block;
-  background-color: rgb(62, 62, 62);
-  margin-top: 0.5rem;
-  opacity: 0;
-  transition: opacity 500ms, transform 500ms;
-  overflow: hidden;
-  transform: scale(0);
-  transform-origin: left;
-}
-
-.tab:hover::after,
-.tab:focus::after {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.tab {
-  width: 40%;
-  text-align: center;
-}
-
-/* Botones 2 */
-.botones-2 {
+.botones {
   display: flex;
   justify-content: space-between;
   margin: 0 0 1rem 0;
-
-  /* margin-top: 1.25rem; */
 }
 
 .btn {
   width: 45%;
   padding: 1rem 1.2rem;
-  /* margin-left: 1rem; */
   font-size: 1.25rem;
   background-color: #f6f8ff;
   border: none;
@@ -264,37 +252,7 @@ a {
   font-size: 1.25rem;
 }
 
-/*Ingreso*/
-.tarjeta {
-  text-align: center;
-  border-radius: 0.7rem;
-  padding: 5%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.tarjeta label {
-  display: block;
-  font-size: 1.4rem;
-  margin-bottom: 0.7rem;
-}
-
-.tarjeta input {
-  width: 90%;
-  height: 1.875rem;
-  border: 1px solid rgb(220, 220, 220);
-  border-radius: 0.7rem;
-  padding-left: 1.875rem;
-  height: 2.625rem;
-  font-size: 1.25rem;
-}
-
-.tarjeta input:focus {
-  outline: none;
-}
-
-.ingreso {
-  height: 150px;
-}
+/* Seccion gastos */
 
 .gastos {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -318,11 +276,6 @@ a {
   height: 1.875rem;
 }
 
-.lista-gastos h1 {
-  font-size: 1.2rem;
-  text-align: left;
-}
-
 .gastos-principal {
   display: flex;
   justify-content: space-between;
@@ -331,6 +284,8 @@ a {
 .gastos i {
   font-size: 1.9rem;
 }
+
+/* Seccion gasto */
 
 .gasto {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -344,7 +299,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0.7rem 0.7rem 0;
+  margin: 0.7rem 0;
+}
+
+.gasto-header h4 {
+  font-size: 1.4rem;
 }
 
 .gasto-header i {
@@ -355,10 +314,11 @@ a {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin: 0.2rem 0;
 }
 
 .gasto-realizado p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .monto-icono {
@@ -366,16 +326,20 @@ a {
   align-items: center;
 }
 
+.monto-icono i {
+  font-size: 1.5rem;
+}
+
 /* Footer */
 
 .footer-mobile {
-  /* position: absolute;
-  bottom: 0px; */
+  position: sticky;
+  bottom: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 1.25rem;
-  padding: 1.25rem 0;
+  padding-top: 1.25rem;
   display: none;
   width: 110%;
 }
@@ -403,18 +367,22 @@ a {
     margin: 0;
   }
 
+  .nav {
+    padding: 1rem;
+  }
+
   .btn {
     width: 30%;
     margin: 0;
     text-align: center;
   }
 
-  .nav .bi-list {
-    display: block;
-  }
-
   .nav-menu {
     display: none;
+  }
+
+  .nav-derecha i {
+    margin: 0;
   }
 
   .footer-mobile {
@@ -422,16 +390,30 @@ a {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 564px) {
+  .contenedor {
+    margin: 0.8rem;
+    border-end-end-radius: 20%;
+    border-end-start-radius: 20%;
+  }
+
+  nav {
+    border-start-start-radius: 20%;
+    border-start-end-radius: 20%;
+  }
+
   .footer-mobile {
     width: 100vw;
-    /* background-color: red; */
     display: flex;
     bottom: 0;
   }
 
   .nav-centro {
     display: none;
+  }
+
+  #menu-hamburguesa {
+    display: inline;
   }
 }
 
