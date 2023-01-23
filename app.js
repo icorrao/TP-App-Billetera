@@ -74,23 +74,27 @@ function restarDinero() {
   let gastodetalles = `<div class="gasto-realizado" id="gasto-${i}">
     <p>${gastoInput.value}</p>
     <div class="monto-icono">
-      <p>${montoInput.value}</p>
+      <p id="valor-${i}">${montoInput.value}</p>
       <a href="#"><i class="bi bi-trash3-fill borrar" id="borrar-${i}"></i></a>
   </div>
 </div>`;
   gastoDiv.innerHTML += gastodetalles;
+
   let borrar = document.querySelector("#borrar-" + i);
+  // Conseguir el valor del gasto a borrar
+  let resultado = document.getElementById("gasto-" + i);
+  let resultadop = document.getElementById("valor-" + i);
+  let resultadoValor = resultadop.innerText;
 
   // Borrar el gasto seleccionado de la pagina
   borrar.addEventListener("click", borrarGasto);
   function borrarGasto() {
     gastoRealizado.removeChild(gastoDiv);
     let saldoinicial = saldoInput.value;
-    let dineroasacar; // aca habria que conseguir el valor de "p" para el gasto del cual se haga click y sumarselo al saldo inicial
 
-    saldoH1.innerText = `$${parseInt(saldoinicial) + parseInt(dineroasacar)}`;
+    saldoH1.innerText = `$${parseInt(saldoinicial) + parseInt(resultadoValor)}`;
     saldoinicial += dineroasacar;
-    saldoInput.value = parseInt(saldoInput.value) + parseInt(dineroasacar);
+    saldoInput.value = parseInt(saldoInput.value) + parseInt(resultadoValor);
     if (saldoInput.value < 0) {
       saldoH1.style.color = "red";
     } else {
