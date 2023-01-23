@@ -82,7 +82,7 @@ function restarDinero() {
 
   let borrar = document.querySelector("#borrar-" + i);
   // Conseguir el valor del gasto a borrar
-  let resultado = document.getElementById("gasto-" + i);
+  // let resultado = document.getElementById("gasto-" + i);
   let resultadop = document.getElementById("valor-" + i);
   let resultadoValor = resultadop.innerText;
 
